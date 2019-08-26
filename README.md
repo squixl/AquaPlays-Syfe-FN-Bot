@@ -1,4 +1,4 @@
-# AquaPlays-Syfe-FN-Bot
+# AquaPlays-FN-bot
 Requirements:
 - Node.JS
 - A working brain
