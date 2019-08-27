@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ItsSyfe/HTTP-Fortnite-Bot.git"
+    "url": "git+https://github.com/AquaPlaysYT/AquaPlays-Syfe-FN-Bot.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ItsSyfe/HTTP-Fortnite-Bot/issues"
+    "url": "https://github.com/AquaPlaysYT/AquaPlays-Syfe-FN-Bot/issues"
   },
-  "homepage": "https://github.com/ItsSyfe/HTTP-Fortnite-Bot#readme",
+  "homepage": "https://github.com/AquaPlaysYT/AquaPlays-Syfe-FN-Bot#readme",
   "dependencies": {
     "epicgames-client": "^2.0.17",
     "epicgames-fortnite-client": "^2.0.16",
