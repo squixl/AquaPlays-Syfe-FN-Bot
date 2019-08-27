@@ -20,8 +20,8 @@ const EGClient = require('epicgames-client').Client;
 const Fortnite = require('epicgames-fortnite-client');
 const { ESubGame } = Fortnite;
 let eg = new EGCent({ // EGClient
-  email: "",
-  password: "",
+  email: "YOUR EMAIL FOR AN ALT",
+  password: "PASSWORD FOR AN ALT",
   debug: console.log,
   });
   eg.init().then(async (success) => {
@@ -32,7 +32,7 @@ let eg = new EGCent({ // EGClient
       throw new Error('Cannot login on EpicGames account.');
       const fortnite = await eg.runGame(Fortnite, {
   netCL: '8243923',
-  partyId: '1:1:8243923', // partyBuildId
+  partyBuildId: '1:1:8243923', // partyBuildId
   });
   console.log("Parsed partyBuildId and netCL")
   console.log("Setting EGClient subgame to BattleRoyale")
@@ -48,7 +48,7 @@ let eg = new EGCent({ // EGClient
       fortnite.party.me.setEmote("/Game/Athena/Items/Cosmetics/Dances/EID_Breakboy.EID_Breakboy");
       fortnite.party.me.setBattlePass(true, 99999999999999999999999999999999999999999999999999999999999, 420, 99999999999999999999999999999999999999999999999999999999999);
     });
-    fortnite.communicator.on('party:invitation', async (invtion) => { // invitation
+    fortnite.communicator.on('party:invitation', async (invitation) => { // invitation
       console.log("Party invitation found")
       current_party = invitation.party;
       await invitation.accept()
@@ -56,7 +56,7 @@ let eg = new EGCent({ // EGClient
     });
     fortnite.communicator.on('friend:request', async (friendops) => {
         console.log("Recieved friend request from " + friendops.friend.id)
-        eg.enableFriendRequest(friendops.friend.id) // acceptFriendRequest
+        eg.acceptFriendRequest(friendops.friend.id) // acceptFriendRequest
         console.log("Sucessfully accepted " + friendops.friend.id + " friend request")
     });
     });
