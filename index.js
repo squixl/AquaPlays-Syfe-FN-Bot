@@ -31,8 +31,8 @@ let eg = new EGCent({ // EGClient
     if(!await eg.login())
       throw new Error('Cannot login on EpicGames account.');
       const fortnite = await eg.runGame(Fortnite, {
-  netCL: '7605985',
-  partyId: '1:1:7605985', // partyBuildId
+  netCL: '8243923',
+  partyId: '1:1:8243923', // partyBuildId
   });
   console.log("Parsed partyBuildId and netCL")
   console.log("Setting EGClient subgame to BattleRoyale")
